@@ -1,0 +1,177 @@
+@import '_variables';
+@import '_mixins';
+html {
+    font-size: 62.5%;
+}
+/* Body Text */
+body {
+    font-family: $fontText;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    font-weight: 500;
+    color: $black; 
+    @supports (font-size-adjust: 1) {
+        & {
+            font-size-adjust: 0.5;
+        }
+    }   
+}
+/* Titles */
+h1 {
+    font-family: $fontTitle;
+    font-size: 3.5rem;
+    line-height: calc(1ex / 0.42);
+    margin: calc(1ex / 0.42) 0;
+    @include mediaQuery($desktop-xxl) {
+        & {
+            font-size: 4.5rem;
+        }
+    }
+}
+h2 {
+    font-family: $fontTitle;
+    font-size: 3rem;
+    line-height: calc(1ex / 0.42);
+    margin: calc(1ex / 0.42) 0;
+    @include mediaQuery($desktop-xxl) {
+        & {
+            font-size: 4rem;
+        }
+    }
+}
+h3 {
+    font-family: $fontTitle;
+    font-size: 2.5rem;
+    line-height: calc(1ex / 0.38);
+    margin: calc(1ex / 0.38) 0;
+    @include mediaQuery($desktop-xxl) {
+        & {
+            font-size: 3.5rem;
+        }
+    }
+}
+h4 {
+    font-family: $fontTitle;
+    font-size: 2.3rem;
+    line-height: calc(1ex / 0.38);
+    margin: calc(1ex / 0.38) 0;
+    @include mediaQuery($desktop-xxl) {
+        & {
+            font-size: 3.3rem;
+        }
+    }
+}
+h5 {
+    font-family: $fontTitle;
+    font-size: 2.2rem;
+    line-height: calc(1ex / 0.37);
+    margin: calc(1ex / 0.37) 0;
+    @include mediaQuery($desktop-xxl) {
+        & {
+            font-size: 3.2rem;
+        }
+    }
+}
+h6 {
+    font-family: $fontTitle;
+    font-size: 1.95rem;
+    line-height: calc(1ex / 0.36);
+    margin: calc(1ex / 0.36) 0;
+    @include mediaQuery($desktop-xxl) {
+        & {
+            font-size: 2.95rem;
+        }
+    }
+}
+p {
+    max-width: 60ch;
+    line-height: calc(1ex / 0.32);
+    margin-bottom: 3.4rem;
+    &:last-of-type:not(:only-of-type) {
+        margin-bottom: 0;
+    }
+    @include mediaQuery($desktop-xxl) {
+        & {
+            font-size: 2.2rem;
+        }
+    }
+}
+/* When the background is black */
+.inverted {
+    background-color: $black;
+    color: $white;
+    a {
+      color: $linkBlack;
+      @include focusLink($linkBlack);
+    }
+}
+a {
+    color: $linkWhite;
+    @include focusLink($linkWhite);
+}
+/* Button Styling */
+.sj-btn {
+    border: 3px solid $yellowoverwhite;
+    background-color: $yellowoverwhite;
+    color: $white;
+    border-radius: 6rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    @include focusBtn($yellowoverwhite, $white, $yellowoverwhite);
+    .inverted & {
+        border: 3px solid $yellow;
+        background-color: $yellow;
+        color: $black;
+        @include focusBtn($yellow, $black, $white); 
+    }    
+    &.sj-secondary-btn {       
+        border: 3px solid $yellowoverwhite;
+        background-color: $white;
+        color: $black;
+        @include focusBtn($white, $yellowoverwhite, $black);
+        .inverted & {
+            border: 3px solid $yellow;
+            background-color: $black;
+            color: $white; 
+            @include focusBtn($black, $yellow, $white);
+        }
+    }
+}
+
+.sj-visually-hidden {    
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+}
+.sj-skip-link {
+    position: absolute;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */    
+    @include skipBtn;
+}
+.sj-container {
+    padding: 1.6rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    @include mediaQuery($desktop) {
+        max-width: 67.8rem;
+        margin: 0 auto;
+    }
+    @include mediaQuery($desktop) {
+        max-width: 116.8rem;
+    }
+
+}

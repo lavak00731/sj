@@ -1,0 +1,34 @@
+@import '../variables';
+.sj-testimonials {
+    background-color: $yellowoverwhite;
+    color: $white;
+    .sj-testimonials-qoute {
+        font-family: $fontTitle;
+        font-size: 2rem;
+        position: relative;
+        padding: 3rem;
+        max-width: 40ch;
+        letter-spacing: 0.15rem;
+        font-style: italic;
+        margin: 0 auto;
+        @include mediaQuery($desktop-xl) {
+            & {
+                max-width: 60ch;
+            }
+        }
+        &::before, &::after {
+            content: '"';
+            font-size: 11rem;
+            line-height: 0.5;
+            position: absolute;            
+        }
+        &::before {
+            left: 0;
+            top: 0
+        }
+        &::after {
+            right: 0;
+            bottom: 0;
+        }
+    }    
+}

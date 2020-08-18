@@ -1,0 +1,97 @@
+@import '_variables';
+@mixin skipBtn () {
+    /* For Browsers which cannot implemented focus Visible*/
+    &:focus {
+        font-size: 1.8rem;
+        color: $black;
+        background-color: $white;
+        height: auto;  
+        width: auto;
+        position: static;
+        display: block;
+        text-align: center;
+        outline: 0;
+    }
+    /* For Browsers which has implemented focus visible */
+    /* First Reset */
+    &:focus:not(:focus-visible) {
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+        outline: 0;
+    }
+    /* Then Apply */
+    &:focus-visible {
+        color: $black;
+        background-color: $white;
+        height: auto;  
+        width: auto;
+        outline: 0;
+    }
+}
+@mixin focusBtn ($frontColor, $backColor, $borderColor) {
+    /* For Browsers which cannot implemented focus Visible*/
+    &:focus {
+        @if $frontColor != '' {
+            color: $frontColor;
+            outline: 0;
+        }
+        @if $backColor != '' {
+            background-color: $backColor;
+            outline: 0;
+        }
+        @if $borderColor != '' {
+            border-color: $borderColor;
+            outline: 0;
+        }
+        @content;               
+    }
+    /* For Browsers which has implemented focus visible */
+    /* First Reset */
+    &:focus:not(:focus-visible) {
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+        outline: 0;
+    }
+    /* Then Apply */
+    &:focus-visible {
+        @if $frontColor != '' {
+            color: $frontColor;
+            outline: 0;
+        }
+        @if $backColor != '' {
+            background-color: $backColor;
+            outline: 0;
+        }
+        @if $borderColor != '' {
+            border-color: $borderColor;
+            outline: 0;
+        }
+        @content;
+    }
+}
+/* focus state for links */
+@mixin focusLink($outlineColor) {
+    &:focus {
+       outline: 3px dashed $outlineColor;
+       outline-offset: 0.5rem;            
+    }
+    /* For Browsers which has implemented focus visible */
+    /* First Reset */
+    &:focus:not(:focus-visible) {
+        outline: 3px dashed transparent;    
+    }
+    /* Then Apply */
+    &:focus-visible {
+        outline: 3px dashed $outlineColor;
+        outline-offset: 0.5rem; 
+    }
+}
+/* Media Queries */
+@mixin mediaQuery($media) {
+    @media ($media) {
+        @content;
+    }
+
+}

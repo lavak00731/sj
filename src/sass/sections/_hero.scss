@@ -1,0 +1,19 @@
+@import '_variables';
+@import '_mixins';
+
+.sj-hero {
+    padding: 3rem 0;
+    height: calc( 100vh - 101px );
+    h1 {
+        font-size: 8rem;
+        text-transform: capitalize;
+        margin: 3rem 0;
+    }
+    @include mediaQuery($phone-landscape) {
+        padding-bottom: 10rem;
+    }
+    @include mediaQuery($tablet) {
+        height: auto;
+        padding: 6rem 0;
+    }
+}

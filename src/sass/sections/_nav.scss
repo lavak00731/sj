@@ -1,0 +1,132 @@
+@import '_variables';
+@import '_mixins';
+
+.sj-main-nav {
+    .sj-nav-trigger {
+        background-color: $yellow;
+        padding: 1.6rem;
+        border: 1px solid $yellow;
+        border-radius: 4px;
+        float: right;
+        @include focusBtn('', '', '') {
+            outline: 2px dashed $white;
+            outline-offset: 2px;            
+        }    
+        &[aria-expanded="false"] {
+            .sj-close-icon, 
+            .sj-visually-hidden:nth-of-type(2) {
+                display: none;
+            }
+            & + .sj-inner-nav {
+                visibility: hidden;
+                transform: translateY(-100%);
+                position: fixed;
+                transition: visibility, transform 0.8s ease-out;
+            }
+        }
+        &[aria-expanded="true"] {
+            .sj-menu-icon, 
+            .sj-visually-hidden:first-of-type {
+                display: none;
+            }
+            & + .sj-inner-nav {
+                visibility: visible;
+                transform: translateY(0);
+                position: fixed;
+                top: 9rem;
+                bottom: 0;
+                right: 0;
+                background-color: $black;
+                padding: 1.6rem;
+                width: calc( 100% - 3rem );
+                max-height: 100vh;   
+                overflow-y: auto; 
+                z-index: 1;
+                @include mediaQuery($tablet) {
+                    width: 50%;
+                } 
+                @include mediaQuery($desktop)  {
+                    width: 25%;
+                    right: calc( ( 100% / 2 ) -  ( 116.8rem / 2 ) );
+                }       
+            }
+        }
+    }
+    .sj-menu-item {
+        color: $white;
+        border: 0;
+        background: none;
+        display: block;
+        text-decoration: none;
+        line-height: 1.9;
+        padding: 1rem;
+        @include focusBtn($black, $yellow, '');
+        font-size: 1.8rem;        
+        &[type="button"] {
+            width: 100%;
+            text-align: left;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                right: 1.6rem;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 16px 8px 0 8px;
+                border-color: $yellow transparent transparent transparent;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: transform 0.8 ease-in-out;
+            }
+            &:focus {
+                &:after {
+                    border-color: $black transparent transparent transparent;
+                }
+            }
+            &:focus:not(:focus-visible) {
+                &:after {
+                    border-color: transparent transparent transparent transparent;
+                }
+            }
+            &:focus-visible {
+                &:after {
+                    border-color: $black transparent transparent transparent;
+                }
+            }
+            &[aria-expanded="false"] {                
+                & + .sj-menu-list {
+                    display: none;
+                }
+            }
+            &[aria-expanded="true"] {
+                & + .sj-menu-list {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 3.2rem;
+                    .sj-menu-item {
+                        position: relative;
+                        &::before {
+                            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                            color: $yellow; /* Change the color */
+                            font-weight: bold; /* If you want it to be bold */
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: -1rem;
+                            font-size: 3rem;
+                        }
+                                            
+                    }
+                   
+                }
+                &:after {
+                    content: '';                    
+                    transform: rotate(-90deg);
+                    transform-origin: 0;
+                }
+            }           
+        }
+    }
+    
+}

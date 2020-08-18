@@ -1,0 +1,17 @@
+@import '../variables';
+
+.sj-header {
+    background-color: $black;
+    color: $white;
+    .sj-logo-container {
+        align-self: center;
+        .sj-logo-wrapper {
+            color: $white;
+            text-decoration: none;
+            @include focusBtn('', '', '') {
+                outline: 2px dashed $white;
+                outline-offset: 2px;  
+            }
+        }        
+    }  
+}
