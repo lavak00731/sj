@@ -1,0 +1,42 @@
+@import '_variables';
+@import '_mixins';
+
+.sj-services {
+    padding: 6rem 0;
+    .sj-container {
+        flex-direction: column;
+        @include mediaQuery($tablet) {
+            flex-direction: row;
+        }
+    }    
+}
+.sj-services-items {
+    @include mediaQuery($tablet) {
+        & {
+            max-width: 30%;
+        }
+    }
+}
+.sj-services-title {
+    font-size: 3rem;
+    color: $yellowoverwhite;
+}
+.sj-services-icon-wrapper {
+    background-color: $yellow;
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    [class^="sj-icon-"] {
+        font-size: 2rem;
+        text-align: center;
+        position: absolute;
+        left: 1.5rem;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+}
+.sj-services-cta-wrapper {
+    text-align: center;
+}

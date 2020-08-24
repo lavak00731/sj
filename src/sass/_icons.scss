@@ -1,0 +1,103 @@
+@import '_variables';
+@font-face {
+    font-family: '#{$icomoon-font-family}';
+    src:
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?qe4z4b') format('truetype'),
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?qe4z4b') format('woff'),
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?qe4z4b##{$icomoon-font-family}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="sj-icon-"], [class*=" sj-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: '#{$icomoon-font-family}' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .sj-icon-email {
+    &:before {
+      content: $sj-icon-email; 
+    }
+  }
+  .sj-icon-app {
+    &:before {
+      content: $sj-icon-app; 
+    }
+  }
+  .sj-icon-location {
+    &:before {
+      content: $sj-icon-location; 
+    }
+  }
+  .sj-icon-design {
+    &:before {
+      content: $sj-icon-design; 
+    }
+  }
+  .sj-icon-bubbles3 {
+    &:before {
+      content: $sj-icon-bubbles3; 
+    }
+  }
+  .sj-icon-spinner9 {
+    &:before {
+      content: $sj-icon-spinner9; 
+    }
+  }
+  .sj-icon-cross {
+    &:before {
+      content: $sj-icon-cross; 
+    }
+  }
+  .sj-icon-code {
+    &:before {
+      content: $sj-icon-code; 
+    }
+  }
+  .sj-icon-facebook {
+    &:before {
+      content: $sj-icon-facebook; 
+    }
+  }
+  .sj-icon-instagram {
+    &:before {
+      content: $sj-icon-instagram; 
+    }
+  }
+  .sj-icon-whatsapp {
+    &:before {
+      content: $sj-icon-whatsapp; 
+    }
+  }
+  .sj-icon-twitter {
+    &:before {
+      content: $sj-icon-twitter; 
+    }
+  }
+  .sj-icon-rss {
+    &:before {
+      content: $sj-icon-rss; 
+    }
+  }
+  .sj-icon-youtube {
+    &:before {
+      content: $sj-icon-youtube; 
+    }
+  }
+  .sj-icon-vimeo {
+    &:before {
+      content: $sj-icon-vimeo; 
+    }
+  }
+  

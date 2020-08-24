@@ -66,10 +66,10 @@
         </div>
     </header>
     <main id="main">
-        <div class="sj-hero inverted">
+        <section class="sj-hero inverted" aria-labelledby="hero-title">
             <div class="sj-container">
                 <section class="hero-wrapper">
-                    <h1>Wake the design</h1>
+                    <h1 id="hero-title">Wake the design</h1>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
                         Aenean massa. Cum sociis natoque penatibus et <a href="#">magnis</a> dis parturient montes, 
                         nascetur ridiculus mus.</p>
@@ -77,16 +77,55 @@
                     <a href="#" class="sj-btn sj-secondary-btn">Portfolio</a>
                 </section>                
             </div>
-        </div>
-        <div class="sj-testimonials">
+        </section>
+        <section class="sj-testimonials" aria-labelledby="testimonials-title">
             <div class="sj-container">
+                <h2 class="sj-visually-hidden" id="testimonials-title">Testimonials</h2>
                 <quote class="sj-testimonials-qoute">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
                     Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec. 
                 </quote>
                 <p class="sj-testimonial-author">John Sebastian Rambo Stallone</p>
             </div>
-        </div>
+        </section>
+        <section class="sj-services" aria-labelledby="services-title">
+            <div class="sj-container">
+                <h2 id="services-title" class="sj-visually-hidden">Services</h2>
+                <div class="sj-services-items">
+                    <div class="sj-services-icon-wrapper">
+                        <div class="sj-icon-design" aria-hidden="true"></div>                       
+                    </div>
+                    <h3 class="sj-services-title">Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                </div>
+                <div class="sj-services-items">
+                    <div class="sj-services-icon-wrapper">
+                        <div class="sj-icon-code" aria-hidden="true"></div>  
+                    </div>
+                    <h3 class="sj-services-title">Coding</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                </div>
+                <div class="sj-services-items">
+                    <div class="sj-services-icon-wrapper">
+                        <div class="sj-icon-app" aria-hidden="true"></div>  
+                    </div>
+                    <h3 class="sj-services-title">Apps</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                </div>                
+            </div>
+            <div class="sj-services-cta-wrapper">
+                <button type="button" class="sj-btn">Launch Project Now</button>
+            </div>
+        </section>
     </main>
     <script src="js/main.js"></script>
 </body>
