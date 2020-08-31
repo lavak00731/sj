@@ -38,6 +38,7 @@
             if(elem.getAttribute('aria-expanded') === 'false') {
                 /* Opens Menu */
                 elem.setAttribute('aria-expanded', true);
+                document.body.classList.add('sj-menu-open')
                 /* If Main button is triggered */
                 if(elem.classList.contains('sj-nav-trigger')) {
                     mainNavElements[0].focus();
@@ -49,7 +50,7 @@
                 /* Closes Menu */
                 elem.setAttribute('aria-expanded', false);               
                 elem.focus();
-
+                document.body.classList.remove('sj-menu-open')
             }
         } else {
             /* Aria Expanded is not set triggers this message */
@@ -85,7 +86,7 @@
     
     /* Arrow Keys Navigation */
     mainNav.addEventListener('keyup', function(event){
-        keyboardCode = event.keyCode;
+        keyboardCode = event.keyCode;        
         switch (keyboardCode) {
             /* Arrow Left */
             case 37 :

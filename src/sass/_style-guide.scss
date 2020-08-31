@@ -14,7 +14,10 @@ body {
         & {
             font-size-adjust: 0.5;
         }
-    }   
+    }  
+    &.sj-menu-open {
+        overflow: hidden;
+    } 
 }
 /* Titles */
 h1 {
@@ -103,11 +106,14 @@ p {
     a {
       color: $linkBlack;
       @include focusLink($linkBlack);
+      @include anchorHover($white, $yellowoverwhite);
     }
 }
 a {
     color: $linkWhite;
     @include focusLink($linkWhite);
+    @include anchorHover($white, $linkWhite);
+    padding: 0 0.5rem;    
 }
 /* Button Styling */
 .sj-btn {
@@ -119,22 +125,26 @@ a {
     padding: 1rem 2rem;
     text-decoration: none;
     @include focusBtn($yellowoverwhite, $white, $yellowoverwhite);
+    @include btnHover($yellowoverwhite, $white, $yellowoverwhite);
     .inverted & {
         border: 3px solid $yellow;
         background-color: $yellow;
         color: $black;
         @include focusBtn($yellow, $black, $white); 
+        @include btnHover($yellow, $black, $white); 
     }    
     &.sj-secondary-btn {       
         border: 3px solid $yellowoverwhite;
         background-color: $white;
         color: $black;
         @include focusBtn($white, $yellowoverwhite, $black);
+        @include btnHover($white, $yellowoverwhite, $black);
         .inverted & {
             border: 3px solid $yellow;
             background-color: $black;
             color: $white; 
             @include focusBtn($black, $yellow, $white);
+            @include btnHover($black, $yellow, $white);
         }
     }
 }

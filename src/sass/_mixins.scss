@@ -88,6 +88,29 @@
         outline-offset: 0.5rem; 
     }
 }
+/* Hover */
+@mixin btnHover ($frontColor, $backColor, $borderColor){
+    &:hover {
+        @if $frontColor != '' {
+            color: $frontColor;
+        }
+        @if $backColor != '' {
+            background-color: $backColor;
+        }
+        @if $borderColor != '' {
+            border-color: $borderColor;
+        }
+        @content;               
+    }
+}
+@mixin anchorHover($front, $back) {
+    &:hover {
+        background-color: $back;
+        color: $front;
+        transition: background-color 0.5s linear;
+    }
+
+}
 /* Media Queries */
 @mixin mediaQuery($media) {
     @media ($media) {
