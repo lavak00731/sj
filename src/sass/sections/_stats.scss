@@ -1,0 +1,29 @@
+@import '../variables';
+.sj-statistics {
+    padding: 6rem 0;
+    .sj-container {
+        flex-wrap: wrap;
+        .sj-statistic-item {
+            flex-basis: 48%;
+            .sj-icon {
+                text-align: center;
+                font-size: 4rem;
+                color: $yellow;
+            }
+            @include mediaQuery($tablet) {
+                flex-basis: 24%;
+            } 
+        }
+        .sj-statistic-explanation {
+            margin-top: 1.5rem;
+            text-align: center;
+            .sj-statistic-fact {
+                display: block;
+                font-size: 1.9rem;
+                line-height: 2;
+                color: $yellow;
+                font-family: $fontText;
+            }
+        }
+    }
+}
