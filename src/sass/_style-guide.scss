@@ -183,5 +183,7 @@ a {
     @include mediaQuery($desktop) {
         max-width: 116.8rem;
     }
-
+    &.sj-full-width {
+        display: block;
+    }
 }

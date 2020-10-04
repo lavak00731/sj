@@ -1,0 +1,27 @@
+@import '_variables';
+@import '_mixins';
+
+.sj-portfolio {
+    .sj-portfolio-title {
+        color: $yellowoverwhite;
+    }
+    .sj-filter-label {
+        font-family: $fontTitle;
+        font-size: 2.5rem;
+        line-height: calc(1ex / 0.38);
+        margin: calc(1ex / 0.38) 0;
+        @include mediaQuery($desktop-xxl) {
+            & {
+                font-size: 3.5rem;
+            }
+        }
+    }
+    .sj-btn-group {
+        .sj-btn {
+            margin-right: 1rem;
+            &:last-of-type() {
+                margin-right: 0;
+            }
+        }
+    }
+}
