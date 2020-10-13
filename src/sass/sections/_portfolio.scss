@@ -39,17 +39,31 @@
             display: block;
             padding: 0;
             overflow: hidden;
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;              
+                bottom: 1rem;
+                background-color: rgba(0,0,0, 0.7);
+                opacity: 0;
+                transition: opacity 0.5s;
+            }  
             &:hover, &:focus {
                 color: $black;
                 background-color: $white;
                 outline: 0;
-                .sj-portfolio-description {
+                &:before, .sj-portfolio-description {
                     opacity: 1;
                 }
             }
         }
         .sj-portfolio-item  {
-            width: 100%;            
+            width: 100%; 
+            position: relative;   
+                  
             .sj-portfolio-img-wrapper {
                 img {
                     max-width: 100%;
@@ -58,15 +72,14 @@
             }
             .sj-portfolio-description {
                 position: absolute;
-                top: 0;
+                top: 50%;
                 left: 0;
                 right: 0;              
-                bottom: 1rem;
-                background-color: rgba(0,0,0, 0.7);
                 color: $white;
                 padding: 2rem;
                 opacity: 0;
-                transition: opacity 0.5s;
+                transform: translateY(-50%);
+                transition: opacity 0.5s;               
             }
         }
     }
