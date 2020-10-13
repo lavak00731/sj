@@ -3,7 +3,7 @@
     var triggerMenu = document.querySelector('.sj-nav-trigger');
     var mainNavTriggers = document.querySelectorAll('.sj-inner-nav .sj-menu-item[type="button"]');
     var mainNavElements = document.querySelectorAll('.sj-inner-nav .sj-menu-item');
-    var visibleNavElements = [];
+    var visibleNavElements;
     var mainNav = document.querySelector('.sj-main-nav');
     var keyboardCode;
     var targetList;

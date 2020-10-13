@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "gulp-typescript": "^6.0.0-alpha.1",
-    "shufflejs": "^5.2.3",
     "typescript": "^3.9.7"
   }
 }

@@ -5,6 +5,9 @@
     .sj-portfolio-title {
         color: $yellowoverwhite;
     }
+    .sj-filters-group {
+        margin-bottom: 4rem;
+    }
     .sj-filter-label {
         font-family: $fontTitle;
         font-size: 2.5rem;
@@ -18,9 +21,52 @@
     }
     .sj-btn-group {
         .sj-btn {
+            padding: 1rem;
             margin-right: 1rem;
             &:last-of-type() {
                 margin-right: 0;
+            }
+            @include mediaQuery($phone-landscape) {
+                & {
+                    padding: 1rem 2rem;
+                }
+            }
+        }
+    }
+    .sj-portfolio-grid {
+
+        a {
+            display: block;
+            padding: 0;
+            overflow: hidden;
+            &:hover, &:focus {
+                color: $black;
+                background-color: $white;
+                outline: 0;
+                .sj-portfolio-description {
+                    opacity: 1;
+                }
+            }
+        }
+        .sj-portfolio-item  {
+            width: 100%;            
+            .sj-portfolio-img-wrapper {
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+            .sj-portfolio-description {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;              
+                bottom: 1rem;
+                background-color: rgba(0,0,0, 0.7);
+                color: $white;
+                padding: 2rem;
+                opacity: 0;
+                transition: opacity 0.5s;
             }
         }
     }

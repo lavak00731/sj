@@ -3,7 +3,7 @@
     const triggerMenu = document.querySelector('.sj-nav-trigger');
     const mainNavTriggers = document.querySelectorAll('.sj-inner-nav .sj-menu-item[type="button"]');
     const mainNavElements = document.querySelectorAll('.sj-inner-nav .sj-menu-item');
-    let visibleNavElements: Array = [];
+    let visibleNavElements: [];
     const mainNav = document.querySelector('.sj-main-nav');
     let keyboardCode;
     let targetList;
@@ -128,16 +128,3 @@
     });
 
 })();
-(function(){    
-    import Shuffle from 'shufflejs';
-    var Shuffle = window.Shuffle;
-    var element = document.querySelector('.my-shuffle-container');
-    var sizer = element.querySelector('.my-sizer-element');
-
-    var shuffleInstance = new Shuffle(element, {
-    itemSelector: '.picture-item',
-    sizer: sizer // could also be a selector: '.my-sizer-element'
-    });
-
-
-    })();

@@ -180,7 +180,7 @@ a {
         max-width: 67.8rem;
         margin: 0 auto;
     }
-    @include mediaQuery($desktop) {
+    @include mediaQuery($desktop-xl) {
         max-width: 116.8rem;
     }
     &.sj-full-width {
