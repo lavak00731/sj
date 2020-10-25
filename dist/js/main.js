@@ -75,7 +75,7 @@
     /* Menu KeyBoard Navigation */
     function keyBoardNav(elem, nextPosition) {
         visibleNavElements = [];
-        mainNavElements.forEach(function (el) {
+        Array.prototype.forEach.call(mainNavElements, function (el) {
             if (!isHidden(el)) {
                 visibleNavElements.push(el);
             }
@@ -117,10 +117,16 @@
     triggerMenu.addEventListener('click', function () {
         openNav(this);
     }, false);
-    mainNavTriggers.forEach(function (navBtn) {
+    Array.prototype.forEach.call(mainNavTriggers, function (navBtn) {
         navBtn.addEventListener('click', function () {
             openNav(this);
         }, false);
+    });
+})();
+//Portfolio lazyload
+(function () {
+    var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy"
     });
 })();
 //Portfolio filtering
@@ -136,6 +142,7 @@
             elem.removeAttribute('hidden');
         });
     }
+    //filter
     function filtering(ftr) {
         showItem();
         if (ftr.value !== "") {
