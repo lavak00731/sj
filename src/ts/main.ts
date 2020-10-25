@@ -1,3 +1,4 @@
+//Nav Functionality
 (function(){
     'use strict';
     const triggerMenu = document.querySelector('.sj-nav-trigger');
@@ -126,5 +127,36 @@
             openNav(this);
         }, false);
     });
+})();
+//Portfolio filtering
+(function(){
+    'use strict';
+    var filterContainer = document.querySelector('.sj-filters-group');
+    var ftrTarget;
+    var filterElems;
+    //Shows Items
+    function showItem() {
+        Array.prototype.forEach.call(document.querySelectorAll('.sj-portfolio-item'), function(elem){
+            elem.classList.remove('sj-portfolio-filtered');
+            elem.removeAttribute('hidden');
+        });
+    }
 
+    function filtering(ftr) {
+        showItem();
+        if(ftr.value !== "") {            
+            ftrTarget = ftr.value;
+            filterElems = Array.prototype.forEach.call(document.querySelectorAll('.sj-portfolio-item'), function(elem){
+                if(elem.dataset.sort !== ftrTarget) {
+                    elem.classList.add('sj-portfolio-filtered');
+                    setTimeout(function(){
+                        elem.setAttribute('hidden', true);
+                    },1200);
+                }
+            })
+        }
+    }
+    filterContainer.addEventListener('change', function(e){    
+        filtering(e.target);
+    }, false )
 })();
