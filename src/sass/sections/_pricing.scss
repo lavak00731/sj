@@ -1,0 +1,39 @@
+@import '_variables';
+@import '_mixins';
+
+.sj-pricing {
+    .sj-pricing-card-container {
+        max-width: 116.8rem;
+        margin: 0 auto;
+        @include mediaQuery($tablet) {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
+    }
+}
+.sj-pricing-card {
+    border: 1px solid $black;
+    padding: 3rem 1rem;
+    &:focus-within {
+        border-width: 4px;
+    }
+    @include mediaQuery($tablet) {
+        width: 30%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    p {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $yellowoverwhite;
+        &:last-of-type {
+            margin-bottom: 3rem;
+        }
+    }
+
+}
