@@ -1,0 +1,23 @@
+@import '_variables';
+@import '_mixins';
+
+footer {
+    .sj-container {
+        flex-wrap: wrap;
+    }
+    ul {
+        li {
+            display: inline-block;
+            a {
+                text-decoration: none;
+                &:hover {
+                    background: none!important;
+                }
+                [class*="sj-icon"] {
+                    font-size: 4rem;
+                    vertical-align: center;
+                }
+            }
+        }
+    }
+}
