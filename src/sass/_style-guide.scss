@@ -177,16 +177,35 @@ a {
     align-items: flex-start;
     align-content: flex-start;
     @include mediaQuery($desktop) {
-        max-width: 67.8rem;
-        margin: 0 auto;
+        & {
+            max-width: 67.8rem;
+            margin: 0 auto;
+        }        
     }
     @include mediaQuery($desktop-xl) {
-        max-width: 116.8rem;
+        & {
+            max-width: 116.8rem;
+        }
     }
     &.sj-full-width {
         display: block;
     }
     .sj-full-width {
         width: 100%;
+    }
+}
+.sj-visible-phone {
+    @include mediaQuery($tablet) {
+        & {
+            display: none;
+        }
+    }
+}
+.sj-visible-desktop {
+    display: none;
+    @include mediaQuery($tablet) {
+        & {
+            display: inline-block;
+        }
     }
 }

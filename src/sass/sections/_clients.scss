@@ -1,0 +1,31 @@
+@import '_variables';
+@import '_mixins';
+
+.sj-clients {
+    .sj-client-body-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: space-between;
+        justify-content: space-between;
+        li {
+            max-width: 48%;
+            @include mediaQuery($tablet) {
+                & {
+                    max-width: 32%;
+                }
+            }
+            @include mediaQuery($desktop-xl) {
+                & {
+                    max-width: 19%;
+                }
+            }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
