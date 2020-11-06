@@ -4,7 +4,8 @@
 .sj-pricing {
     .sj-pricing-card-container {
         max-width: 116.8rem;
-        margin: 0 auto;
+        margin: 0 auto 6rem;
+        padding: 0 1.6rem;
         @include mediaQuery($tablet) {
             display: flex;
             flex-wrap: nowrap;
@@ -18,6 +19,7 @@
 .sj-pricing-card {
     border: 1px solid $black;
     padding: 3rem 1rem;
+    margin-bottom: 2rem;
     &:focus-within {
         border-width: 4px;
     }
