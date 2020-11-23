@@ -65,9 +65,11 @@
             </nav>
         </div>
     </header>
-    <main id="main">
+    <!--h1 refers to the main topic of the page that´s why the aria-labelledby
+    is pointing from main to the hero section-->
+    <main id="main" aria-labelledby="hero-title">
         <!--Hero Starts-->
-        <section class="sj-hero inverted" aria-labelledby="hero-title">
+        <section class="sj-hero inverted" >
             <div class="sj-container">
                 <div class="hero-wrapper">
                     <h1 id="hero-title">Wake the design</h1>
@@ -488,7 +490,7 @@
             </div>
         </section>
         <!--Contacts Ends-->
-        <footer class="inverted">
+        <footer class="inverted" role="contentinfo">
             <div class="sj-container">
                 <p>&copy;2021 a multipurpose site</p>
                 <ul>
