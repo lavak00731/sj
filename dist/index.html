@@ -69,7 +69,7 @@
     is pointing from main to the hero section-->
     <main id="main" aria-labelledby="hero-title">
         <!--Hero Starts-->
-        <section class="sj-hero inverted" >
+        <section class="sj-hero inverted">
             <div class="sj-container">
                 <div class="hero-wrapper">
                     <h1 id="hero-title">Wake the design</h1>
@@ -86,12 +86,13 @@
         <section class="sj-testimonials" aria-labelledby="testimonials-title">
             <div class="sj-container">
                 <h2 class="sj-visually-hidden" id="testimonials-title">Testimonials</h2>
-                <blockquote class="sj-testimonials-qoute">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa.
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-                    felis, ultricies nec.
-                    <p class="sj-testimonial-author">John Sebastian Rambo Stallone</p>
+                <blockquote cite="http://yourcustomersite.com">
+                    <p class="sj-testimonials-qoute">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                        commodo ligula eget dolor. Aenean
+                        massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                        felis, ultricies nec.</p>
+                    <p class="sj-testimonial-author">John Sebastian Rambo Stallone, CEO</p>
                 </blockquote>
 
             </div>
@@ -144,25 +145,25 @@
                 <div class="sj-statistic-item">
                     <div class="sj-icon sj-icon-code" aria-hidden="true"></div>
                     <h3 class="sj-statistic-explanation">345
-                        <span class="sj-statistic-fact">Completed Projects</span>
+                        <span class="sj-statistic-fact" role="text">Completed Projects</span>
                     </h3>
                 </div>
                 <div class="sj-statistic-item">
                     <div class="sj-icon sj-icon-design " aria-hidden="true"></div>
                     <h3 class="sj-statistic-explanation">983
-                        <span class="sj-statistic-fact">Design Approved</span>
+                        <span class="sj-statistic-fact" role="text">Design Approved</span>
                     </h3>
                 </div>
                 <div class="sj-statistic-item">
                     <div class="sj-icon sj-icon-email" aria-hidden="true"></div>
                     <h3 class="sj-statistic-explanation">473
-                        <span class="sj-statistic-fact">Email Sent</span>
+                        <span class="sj-statistic-fact" role="text">Email Sent</span>
                     </h3>
                 </div>
                 <div class="sj-statistic-item">
                     <div class="sj-icon sj-icon-app" aria-hidden="true"></div>
                     <h3 class="sj-statistic-explanation">48
-                        <span class="sj-statistic-fact">Apps in Stores</span>
+                        <span class="sj-statistic-fact" role="text">Apps in Stores</span>
                     </h3>
                 </div>
             </div>
@@ -180,38 +181,35 @@
                         <legend class="sj-filter-label">Sort</legend>
                         <div class="sj-btn-group" id="sorter">
                             <input type="radio" class="sj-visually-hidden" name="sort-value" id="all" value="" checked>
-                            <label class="sj-btn" for="all">                                
+                            <label class="sj-btn" for="all">
                                 All
                             </label>
                             <input type="radio" class="sj-visually-hidden" name="sort-value" id="design" value="design">
-                            <label class="sj-btn" for="design">                                
+                            <label class="sj-btn" for="design">
                                 Design
                             </label>
                             <input type="radio" class="sj-visually-hidden" name="sort-value" id="code" value="code">
-                            <label class="sj-btn" for="code">                                
+                            <label class="sj-btn" for="code">
                                 Code
                             </label>
                             <input type="radio" class="sj-visually-hidden" name="sort-value" id="apps" value="apps">
-                            <label class="sj-btn" for="apps">                                
+                            <label class="sj-btn" for="apps">
                                 Apps
                             </label>
                         </div>
                     </fieldset>
                 </div>
             </div>
-            <div class="sj-portfolio-grid" aria-live="polite">
+            <div class="sj-portfolio-grid">
                 <div class="sj-portfolio-item sj-portfolio-item-prominent" data-sort="apps">
                     <a aria-describedby="description" href="">
                         <figure class="sj-portfolio-img-wrapper">
-                            <img
-                            class="lazy" 
-                            src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
-                            data-src="https://picsum.photos/800/800?random=1"
-                            data-srcset="https://picsum.photos/400/400?random=1 400w,
+                            <img class="lazy"
+                                src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                data-src="https://picsum.photos/800/800?random=1" data-srcset="https://picsum.photos/400/400?random=1 400w,
                             https://picsum.photos/800/800?random=1 800w,
                             https://picsum.photos/1200/1200?random=1 1200w,
-                            https://picsum.photos/2500/2500?random=1 1920w"
-                            alt="Img Description">
+                            https://picsum.photos/2500/2500?random=1 1920w" alt="Img Description">
                             <figcaption id="description" class="sj-portfolio-description">Lorem ipsum dolor sit amet,
                                 consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                                 natoque penatibus et ma</figcaption>
@@ -221,14 +219,11 @@
                 <div class="sj-portfolio-item" data-sort="design">
                     <a aria-describedby="description1" href="">
                         <figure class="sj-portfolio-img-wrapper">
-                            <img
-                            class="lazy"  
-                            src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
-                            data-src="https://picsum.photos/600/600?random=1"
-                            data-srcset="https://picsum.photos/400/400?random=1 400w,
+                            <img class="lazy"
+                                src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                data-src="https://picsum.photos/600/600?random=1" data-srcset="https://picsum.photos/400/400?random=1 400w,
                             https://picsum.photos/800/800?random=1 800w,
-                            https://picsum.photos/1200/1200?random=1 1200w"
-                            alt="Img Description">
+                            https://picsum.photos/1200/1200?random=1 1200w" alt="Img Description">
                             <figcaption id="description1" class="sj-portfolio-description">Lorem ipsum dolor sit amet,
                                 consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                                 natoque penatibus et ma</figcaption>
@@ -238,14 +233,11 @@
                 <div class="sj-portfolio-item" data-sort="code">
                     <a aria-describedby="description2" href="">
                         <figure class="sj-portfolio-img-wrapper">
-                            <img
-                            class="lazy" 
-                            src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
-                            data-src="https://picsum.photos/600/600?random=1"
-                            data-srcset="https://picsum.photos/400/400?random=1 400w,
+                            <img class="lazy"
+                                src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                data-src="https://picsum.photos/600/600?random=1" data-srcset="https://picsum.photos/400/400?random=1 400w,
                             https://picsum.photos/800/800?random=1 800w,
-                            https://picsum.photos/1200/1200?random=1 1200w"
-                            alt="Img Description">
+                            https://picsum.photos/1200/1200?random=1 1200w" alt="Img Description">
                             <figcaption id="description2" class="sj-portfolio-description">Lorem ipsum dolor sit amet,
                                 consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                                 natoque penatibus et ma</figcaption>
@@ -255,14 +247,11 @@
                 <div class="sj-portfolio-item" data-sort="apps">
                     <a aria-describedby="description3" href="">
                         <figure class="sj-portfolio-img-wrapper">
-                            <img
-                            class="lazy" 
-                            src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
-                            data-src="https://picsum.photos/600/600?random=1"
-                            data-srcset="https://picsum.photos/400/400?random=1 400w,
+                            <img class="lazy"
+                                src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                data-src="https://picsum.photos/600/600?random=1" data-srcset="https://picsum.photos/400/400?random=1 400w,
                             https://picsum.photos/800/800?random=1 800w,
-                            https://picsum.photos/1200/1200?random=1 1200w"
-                            alt="Img Description">
+                            https://picsum.photos/1200/1200?random=1 1200w" alt="Img Description">
                             <figcaption id="description3" class="sj-portfolio-description">Lorem ipsum dolor sit amet,
                                 consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                                 natoque penatibus et ma</figcaption>
@@ -272,14 +261,11 @@
                 <div class="sj-portfolio-item" data-sort="code">
                     <a aria-describedby="description4" href="">
                         <figure class="sj-portfolio-img-wrapper">
-                            <img
-                            class="lazy" 
-                            src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
-                            data-src="https://picsum.photos/600/600?random=1"
-                            data-srcset="https://picsum.photos/400/400?random=1 400w,
+                            <img class="lazy"
+                                src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                data-src="https://picsum.photos/600/600?random=1" data-srcset="https://picsum.photos/400/400?random=1 400w,
                             https://picsum.photos/800/800?random=1 800w,
-                            https://picsum.photos/1200/1200?random=1 1200w"
-                            alt="Img Description">
+                            https://picsum.photos/1200/1200?random=1 1200w" alt="Img Description">
                             <figcaption id="description4" class="sj-portfolio-description">Lorem ipsum dolor sit amet,
                                 consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                                 natoque penatibus et ma</figcaption>
@@ -289,14 +275,11 @@
                 <div class="sj-portfolio-item" data-sort="design">
                     <a aria-describedby="description5" href="">
                         <figure class="sj-portfolio-img-wrapper">
-                            <img 
-                            class="lazy" 
-                            src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
-                            data-src="https://picsum.photos/600/600?random=1"
-                            data-srcset="https://picsum.photos/400/400?random=1 400w,
+                            <img class="lazy"
+                                src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                data-src="https://picsum.photos/600/600?random=1" data-srcset="https://picsum.photos/400/400?random=1 400w,
                             https://picsum.photos/800/800?random=1 800w,
-                            https://picsum.photos/1200/1200?random=1 1200w"
-                            alt="Img Description">
+                            https://picsum.photos/1200/1200?random=1 1200w" alt="Img Description">
                             <figcaption id="description5" class="sj-portfolio-description">Lorem ipsum dolor sit amet,
                                 consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                                 natoque penatibus et ma</figcaption>
@@ -306,14 +289,11 @@
                 <div class="sj-portfolio-item" data-sort="apps">
                     <a aria-describedby="description6" href="">
                         <figure class="sj-portfolio-img-wrapper">
-                            <img
-                            class="lazy"  
-                            src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
-                            data-src="https://picsum.photos/600/600?random=1"
-                            data-srcset="https://picsum.photos/400/400?random=1 400w,
+                            <img class="lazy"
+                                src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                data-src="https://picsum.photos/600/600?random=1" data-srcset="https://picsum.photos/400/400?random=1 400w,
                             https://picsum.photos/800/800?random=1 800w,
-                            https://picsum.photos/1200/1200?random=1 1200w"
-                            alt="Img Description">
+                            https://picsum.photos/1200/1200?random=1 1200w" alt="Img Description">
                             <figcaption id="description6" class="sj-portfolio-description">Lorem ipsum dolor sit amet,
                                 consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                                 natoque penatibus et ma</figcaption>
@@ -323,14 +303,11 @@
                 <div class="sj-portfolio-item" data-sort="code">
                     <a aria-describedby="description7" href="">
                         <figure class="sj-portfolio-img-wrapper">
-                            <img 
-                            class="lazy" 
-                            src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
-                            data-src="https://picsum.photos/600/600?random=1"
-                            data-srcset="https://picsum.photos/400/400?random=1 400w,
+                            <img class="lazy"
+                                src="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                data-src="https://picsum.photos/600/600?random=1" data-srcset="https://picsum.photos/400/400?random=1 400w,
                             https://picsum.photos/800/800?random=1 800w,
-                            https://picsum.photos/1200/1200?random=1 1200w"
-                            alt="Img Description">
+                            https://picsum.photos/1200/1200?random=1 1200w" alt="Img Description">
                             <figcaption id="description7" class="sj-portfolio-description">Lorem ipsum dolor sit amet,
                                 consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                                 natoque penatibus et ma</figcaption>
@@ -345,61 +322,61 @@
             <div class="sj-container">
                 <h2 id="pricing-title" class="sj-full-width">Pricing</h2>
             </div>
-            <div class="sj-pricing-card-container">                
+            <div class="sj-pricing-card-container">
                 <div class="sj-pricing-card">
                     <figure>
-                        <img src="https://picsum.photos/seed/picsum/700/300" alt="Gorilla Face Picture">		
+                        <img src="https://picsum.photos/seed/picsum/700/300" alt="Gorilla Face Picture">
                     </figure>
                     <h3>Gorilla</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa.
-                    Cum sociis natoque penatibus et magnis dis parturient montes, 
-                    nascetur ridiculus mus. Donec qu</p>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa.
-                    Cum sociis natoque penatibus et magnis dis parturient montes, 
-                    nascetur ridiculus mus. Donec qu</p>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo ligula eget dolor. Aenean massa.
-                        Cum sociis natoque penatibus et magnis dis parturient montes, 
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Donec qu</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Donec qu</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
                         nascetur ridiculus mus. Donec qu</p>
                     <a class="sj-btn" href="">Buy</a>
                 </div>
                 <div class="sj-pricing-card">
                     <figure>
-                        <img src="https://picsum.photos/seed/picsum/700/300" alt="Rhino Face Picture in the Woods">		
+                        <img src="https://picsum.photos/seed/picsum/700/300" alt="Rhino Face Picture in the Woods">
                     </figure>
                     <h3>Rhino</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa.
-                    Cum sociis natoque penatibus et magnis dis parturient montes, 
-                    nascetur ridiculus mus. Donec qu</p>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa.
-                    Cum sociis natoque penatibus et magnis dis parturient montes, 
-                    nascetur ridiculus mus. Donec qu</p>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo ligula eget dolor. Aenean massa.
-                        Cum sociis natoque penatibus et magnis dis parturient montes, 
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Donec qu</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Donec qu</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
                         nascetur ridiculus mus. Donec qu</p>
                     <a class="sj-btn" href="">Buy</a>
                 </div>
                 <div class="sj-pricing-card">
                     <figure>
-                        <img src="https://picsum.photos/seed/picsum/700/300" alt="Shark Picture">		
+                        <img src="https://picsum.photos/seed/picsum/700/300" alt="Shark Picture">
                     </figure>
                     <h3>Shark</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa.
-                    Cum sociis natoque penatibus et magnis dis parturient montes, 
-                    nascetur ridiculus mus. Donec qu</p>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa.
-                    Cum sociis natoque penatibus et magnis dis parturient montes, 
-                    nascetur ridiculus mus. Donec qu</p>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo ligula eget dolor. Aenean massa.
-                        Cum sociis natoque penatibus et magnis dis parturient montes, 
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Donec qu</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Donec qu</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
                         nascetur ridiculus mus. Donec qu</p>
                     <a class="sj-btn" href="">Buy</a>
                 </div>
@@ -411,50 +388,61 @@
             <div class="sj-container">
                 <header class="sj-clients-header">
                     <h2 id="clients-title">Clients</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa.</p>
                 </header>
             </div>
             <div class="sj-container">
                 <div class="sj-client-body">
                     <ol class="sj-client-body-list">
                         <li>
-                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png" alt="client logo description">
+                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png"
+                                alt="client logo description">
                             <p class="sj-visually-hidden">client profile description and indutstry</p>
                         </li>
                         <li>
-                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png" alt="client logo description">
+                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png"
+                                alt="client logo description">
                             <p class="sj-visually-hidden">client profile description and indutstry</p>
                         </li>
                         <li>
-                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png" alt="client logo description">
+                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png"
+                                alt="client logo description">
                             <p class="sj-visually-hidden">client profile description and indutstry</p>
                         </li>
                         <li>
-                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png" alt="client logo description">
+                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png"
+                                alt="client logo description">
                             <p class="sj-visually-hidden">client profile description and indutstry</p>
                         </li>
                         <li>
-                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png" alt="client logo description">
+                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png"
+                                alt="client logo description">
                             <p class="sj-visually-hidden">client profile description and indutstry</p>
                         </li>
                         <li>
-                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png" alt="client logo description">
+                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png"
+                                alt="client logo description">
                             <p class="sj-visually-hidden">client profile description and indutstry</p>
                         </li>
                         <li>
-                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png" alt="client logo description">
+                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png"
+                                alt="client logo description">
                             <p class="sj-visually-hidden">client profile description and indutstry</p>
                         </li>
                         <li>
-                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png" alt="client logo description">
+                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png"
+                                alt="client logo description">
                             <p class="sj-visually-hidden">client profile description and indutstry</p>
                         </li>
                         <li>
-                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png" alt="client logo description">
+                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png"
+                                alt="client logo description">
                             <p class="sj-visually-hidden">client profile description and indutstry</p>
                         </li>
                         <li>
-                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png" alt="client logo description">
+                            <img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-1.png"
+                                alt="client logo description">
                             <p class="sj-visually-hidden">client profile description and indutstry</p>
                         </li>
                     </ol>
@@ -470,22 +458,28 @@
             </div>
             <div class="sj-contacts-container">
                 <form action="#">
-                    <p>All fields are required</p>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" placeholder="Your Name" aria-required="true" required>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="youremail@email.com" aria-required="true" required>
+                    <input type="email" name="email" id="email" placeholder="youremail@email.com" aria-required="true"
+                        required>
                     <label for="subject">Subject</label>
-                    <input type="text" name="subject" id="subject" placeholder="Your Subject Goes Here" aria-required="true" required>
+                    <input type="text" name="subject" id="subject" placeholder="Your Subject Goes Here"
+                        aria-required="true" required>
                     <label for="msg">Your Message</label>
                     <textarea name="msg" id="msg" rows="10" aria-required="true" required></textarea>
                     <input type="submit" class="sj-btn" value="Submit">
                 </form>
                 <div class="sj-contacts-off-site inverted" aria-labelledby="contactinfo">
                     <h3 id="contactinfo" class="sj-visually-hidden">Contact Information</h3>
-                    <p><span class="sj-visually-hidden">Telephone </span><span class="sj-icon-bubbles3" aria-hidden="true"></span><a class="sj-visible-phone" href="tel:+13465645465">346-564-5465</a><span class="sj-visible-desktop">346-564-5465</span></p>
-                    <p><span class="sj-visually-hidden">Email </span><span class="sj-icon-email" aria-hidden="true"></span>email@email.com</p>
-                    <p><span class="sj-visually-hidden">Address </span><span class="sj-icon-location" aria-hidden="true"></span>4526 Oak Avenue, Chicago, Illinois</p>
+                    <p><span class="sj-visually-hidden">Telephone </span><span class="sj-icon-bubbles3"
+                            aria-hidden="true"></span><a class="sj-visible-phone"
+                            href="tel:+13465645465">346-564-5465</a><span class="sj-visible-desktop">346-564-5465</span>
+                    </p>
+                    <p><span class="sj-visually-hidden">Email </span><span class="sj-icon-email"
+                            aria-hidden="true"></span>email@email.com</p>
+                    <p><span class="sj-visually-hidden">Address </span><span class="sj-icon-location"
+                            aria-hidden="true"></span>4526 Oak Avenue, Chicago, Illinois</p>
                 </div>
             </div>
         </section>
@@ -494,12 +488,18 @@
             <div class="sj-container">
                 <p>&copy;2021 a multipurpose site</p>
                 <ul>
-                    <li><a href=""><span class="sj-icon-whatsapp" aria-hidden="true"></span><span class="sj-visually-hidden">Get in touch via Whatsapp</span></a></li>
-                    <li><a href=""><span class="sj-icon-instagram" aria-hidden="true"></span><span class="sj-visually-hidden">Follow us in Instagram</span></a></li>
-                    <li><a href=""><span class="sj-icon-facebook" aria-hidden="true"></span><span class="sj-visually-hidden">Follow us in Facebook</span></a></li>
-                    <li><a href=""><span class="sj-icon-twitter" aria-hidden="true"></span><span class="sj-visually-hidden">Follow us in Twitter</span></a></li>
-                    <li><a href=""><span class="sj-icon-youtube" aria-hidden="true"></span><span class="sj-visually-hidden">Follow us in Youtube</span></a></li>
-                    <li><a href=""><span class="sj-icon-vimeo" aria-hidden="true"></span><span class="sj-visually-hidden">Follow us in Vimeo</span></a></li>
+                    <li><a href=""><span class="sj-icon-whatsapp" aria-hidden="true"></span><span
+                                class="sj-visually-hidden">Get in touch via Whatsapp</span></a></li>
+                    <li><a href=""><span class="sj-icon-instagram" aria-hidden="true"></span><span
+                                class="sj-visually-hidden">Follow us in Instagram</span></a></li>
+                    <li><a href=""><span class="sj-icon-facebook" aria-hidden="true"></span><span
+                                class="sj-visually-hidden">Follow us in Facebook</span></a></li>
+                    <li><a href=""><span class="sj-icon-twitter" aria-hidden="true"></span><span
+                                class="sj-visually-hidden">Follow us in Twitter</span></a></li>
+                    <li><a href=""><span class="sj-icon-youtube" aria-hidden="true"></span><span
+                                class="sj-visually-hidden">Follow us in Youtube</span></a></li>
+                    <li><a href=""><span class="sj-icon-vimeo" aria-hidden="true"></span><span
+                                class="sj-visually-hidden">Follow us in Vimeo</span></a></li>
                 </ul>
             </div>
         </footer>
