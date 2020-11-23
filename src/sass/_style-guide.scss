@@ -175,7 +175,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    align-content: flex-start;
+    align-content: flex-start;    
     @include mediaQuery($desktop) {
         & {
             max-width: 67.8rem;

@@ -1,14 +1,14 @@
 @import '../variables';
 .sj-testimonials {
-    background-color: $yellowoverwhite;
-    color: $white;
+    background-color: $yellow;
+    color: $black;
     padding: 6rem 0;
     .sj-container {
         flex-direction: column;
     }    
 }
 .sj-testimonials-qoute {
-    font-family: $fontTitle;
+    font-family: $fontText;
     font-size: 2.5rem;
     position: relative;
     padding: 3rem;

@@ -3,6 +3,11 @@
 .sj-header {
     background-color: $black;
     color: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
     .sj-logo-container {
         align-self: center;
         .sj-logo-wrapper {
@@ -13,5 +18,10 @@
                 outline-offset: 2px;  
             }
         }        
-    }  
+    }
+    @include mediaQuery($desktop)  {
+        & {
+            position: static;
+        }
+    }
 }

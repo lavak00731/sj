@@ -84,13 +84,13 @@
         <section class="sj-testimonials" aria-labelledby="testimonials-title">
             <div class="sj-container">
                 <h2 class="sj-visually-hidden" id="testimonials-title">Testimonials</h2>
-                <quote class="sj-testimonials-qoute">
+                <blockquote class="sj-testimonials-qoute">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                     massa.
                     Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
                     felis, ultricies nec.
                     <p class="sj-testimonial-author">John Sebastian Rambo Stallone</p>
-                </quote>
+                </blockquote>
 
             </div>
         </section>
@@ -467,7 +467,8 @@
                 <p>All fields are required</p>
             </div>
             <div class="sj-contacts-container">
-                <form action="">
+                <form action="#">
+                    <p>All fields are required</p>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" placeholder="Your Name" aria-required="true" required>
                     <label for="email">Email</label>
@@ -478,10 +479,11 @@
                     <textarea name="msg" id="msg" rows="10" aria-required="true" required></textarea>
                     <input type="submit" class="sj-btn" value="Submit">
                 </form>
-                <div class="sj-contacts-off-site inverted">
-                    <p><span class="sj-icon-bubbles3" aria-hidden="true"></span><a class="sj-visible-phone" href="tel:+13465645465">346-564-5465</a><span class="sj-visible-desktop">346-564-5465</span></p>
-                    <p><span class="sj-icon-email" aria-hidden="true"></span>email@email.com</p>
-                    <p><span class="sj-icon-location" aria-hidden="true"></span>4526 Oak Avenue, Chicago, Illinois</p>
+                <div class="sj-contacts-off-site inverted" aria-labelledby="contactinfo">
+                    <h3 id="contactinfo" class="sj-visually-hidden">Contact Information</h3>
+                    <p><span class="sj-visually-hidden">Telephone </span><span class="sj-icon-bubbles3" aria-hidden="true"></span><a class="sj-visible-phone" href="tel:+13465645465">346-564-5465</a><span class="sj-visible-desktop">346-564-5465</span></p>
+                    <p><span class="sj-visually-hidden">Email </span><span class="sj-icon-email" aria-hidden="true"></span>email@email.com</p>
+                    <p><span class="sj-visually-hidden">Address </span><span class="sj-icon-location" aria-hidden="true"></span>4526 Oak Avenue, Chicago, Illinois</p>
                 </div>
             </div>
         </section>
@@ -490,12 +492,12 @@
             <div class="sj-container">
                 <p>&copy;2021 a multipurpose site</p>
                 <ul>
-                    <li><a href=""><span class="sj-icon-whatsapp" aria-hidden="true"></span><span role="text" class="sj-visually-hidden">Whatsapp</span></a></li>
-                    <li><a href=""><span class="sj-icon-instagram" aria-hidden="true"></span><span role="text" class="sj-visually-hidden">Instagram</span></a></li>
-                    <li><a href=""><span class="sj-icon-facebook" aria-hidden="true"></span><span role="text" class="sj-visually-hidden">Facebook</span></a></li>
-                    <li><a href=""><span class="sj-icon-twitter" aria-hidden="true"></span><span role="text" class="sj-visually-hidden">Twitter</span></a></li>
-                    <li><a href=""><span class="sj-icon-youtube" aria-hidden="true"></span><span role="text" class="sj-visually-hidden">Youtube</span></a></li>
-                    <li><a href=""><span class="sj-icon-vimeo" aria-hidden="true"></span><span role="text" class="sj-visually-hidden">Vimeo</span></a></li>
+                    <li><a href=""><span class="sj-icon-whatsapp" aria-hidden="true"></span><span class="sj-visually-hidden">Get in touch via Whatsapp</span></a></li>
+                    <li><a href=""><span class="sj-icon-instagram" aria-hidden="true"></span><span class="sj-visually-hidden">Follow us in Instagram</span></a></li>
+                    <li><a href=""><span class="sj-icon-facebook" aria-hidden="true"></span><span class="sj-visually-hidden">Follow us in Facebook</span></a></li>
+                    <li><a href=""><span class="sj-icon-twitter" aria-hidden="true"></span><span class="sj-visually-hidden">Follow us in Twitter</span></a></li>
+                    <li><a href=""><span class="sj-icon-youtube" aria-hidden="true"></span><span class="sj-visually-hidden">Follow us in Youtube</span></a></li>
+                    <li><a href=""><span class="sj-icon-vimeo" aria-hidden="true"></span><span class="sj-visually-hidden">Follow us in Vimeo</span></a></li>
                 </ul>
             </div>
         </footer>
