@@ -5,3 +5,19 @@ Saint Joseph is a Multipurpose Html5 Template, where the seal is placed in acces
 The project is created using [sass](https://sass-lang.com/), [gulp](https://gulpjs.com/) and [typescript](https://www.typescriptlang.org/).
 
 ## Installation
+
+This project relies on ***nodejs*** for local server development and ***gulp*** for the running tasks. 
+So please:
+* download and install [nodejs](https://nodejs.org/) 
+* download [gulp](https://gulpjs.com/)
+* install the following node plugins:
+    * [Gulp Typescript](https://www.npmjs.com/package/gulp-typescript) `npm install gulp-typescript typescript`
+    * [Gulp Server Livereload](https://www.npmjs.com/package/gulp-server-livereload) `npm install --save-dev gulp-server-livereload`
+    * [Gulp Sass](https://www.npmjs.com/package/gulp-sass) `npm install node-sass gulp-sass --save-dev`
+
+Everything is set up on the folder you downloaded the Saint Joseph, you just type "gulp" in CMD, so a live server on your favourite browser will be up at port 8000. Besides any change in sass or typescript is watched and the site will reload automatically with the latest changes.
+
+## Template Sections
+
+
+
