@@ -23,10 +23,16 @@ This project is prepared to be used "out of the box", but if you need to do some
 * ***src***: where typescript and sass files are held in folders with the respective names. 
     * Regarding typescript (ts) there it can be found with the interaction for the main menu and filter for portfolio section. JS files compiles in dist/js/main.js. 
     * In this folder sass folder is stored with each section styling plus mixins, icons, reset css and style guide (general site styling). All this files compiles in dist/css/style.css
-* ***dist***
+* ***dist***: in this folder a customer can find:
+    *  html with the sections of this template
+    *  "css" folder with fonts and style.css which compiles all sass files
+    *  "icons" folder where svg icons are present
+    * "js" folder where the main.ts compiles into main.js
 
 
 ## Template Sections
 
+This template has several sections:
 
-
+* Header: where logo and nav are located.
+* Nav: Navigation, created based in a button where 

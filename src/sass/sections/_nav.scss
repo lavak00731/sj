@@ -8,7 +8,7 @@
         border: 1px solid $yellow;
         border-radius: 4px;
         float: right;
-        @include focusBtn('', '', '') {
+        @include focusBtn('', $yellow, '') {
             outline: 2px dashed $white;
             outline-offset: 2px;            
         }    

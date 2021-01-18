@@ -49,7 +49,7 @@
     /* For Browsers which has implemented focus visible */
     /* First Reset */
     &:focus:not(:focus-visible) {
-        background: transparent;
+        background: $backColor;
         border-color: transparent;
         color: transparent;
         outline: 0;
