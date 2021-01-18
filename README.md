@@ -35,4 +35,6 @@ This project is prepared to be used "out of the box", but if you need to do some
 This template has several sections:
 
 * Header: where logo and nav are located.
-* Nav: Navigation, created based in a button where 
+* Nav: Navigation, created based in a button where a accessible navigation is displayed. The navigation is based on links and buttons in order to show secondary links to the site.
+* Hero: main title lives there with a brief description of this page, plus two call to action buttons. It can be styled to be used with a background image. On mobile devices it covers the full viewport. 
+* Testimonials: a place where a legitimate customer can recomend our services or stress our commitment
