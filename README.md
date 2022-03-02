@@ -17,6 +17,8 @@ So please:
 
 Everything is set up on the folder you downloaded the Saint Joseph, you just type "gulp" in CMD, so a live server on your favourite browser will be up at port 8000. Besides any change in sass or typescript is watched and the site will reload automatically with the latest changes.
 
+In case the previous steps are not working try the command 'npm install'.
+
 ## Architecture
 
 This project is prepared to be used "out of the box", but if you need to do some customizations, there are two main folders to have in mind for that purpose:
@@ -57,3 +59,7 @@ Another accessible feature are the combinations of colors we used in this templa
 All the interactive elements (anchors, buttons, navigation) are suitable for being used for any mean: mouse, touch devices and keyboard navigation, and the styling applied for this last mean is already applied. 
 
 Finally all the features known for accessibility are covered by this template, just follow the original examples for any modification.
+
+### Section Using 
+
+All section are using "aria-labelledby" in order to depict which section is about 

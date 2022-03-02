@@ -51,7 +51,7 @@
     &:focus:not(:focus-visible) {
         background: $backColor;
         border-color: transparent;
-        color: transparent;
+        color: $black;
         outline: 0;
     }
     /* Then Apply */
