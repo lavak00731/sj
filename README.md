@@ -36,16 +36,16 @@ This project is prepared to be used "out of the box", but if you need to do some
 
 This template has several sections:
 
-* ***Header***: where logo and nav are located. Header is fixed positioned in order to have navigation 
-* ***Nav***: Navigation, created based in a button where a accessible navigation is displayed. The navigation is based on links and buttons in order to show secondary links to the site.
+* ***Header***: where logo and nav are located. Header is fixed positioned in order to have navigation. 
+* ***Nav***: Navigation, created based in a button where an accessible navigation is displayed. The navigation is based on links and buttons in order to show secondary links to the site.
 * ***Hero***: main title lives there with a brief description of this page, plus two call to action buttons. It can be styled to be used with a background image. On mobile devices it covers the full viewport. 
 * ***Testimonials***: a place where a legit customer can recomend our services or stress our commitment.
 * ***Services***: where there is an explanation of the services that the agency is doing.
 * ***Statistics***: description of the work done by the agency.
-* ***Portfolio***:  a place to show projects done, that can be sorted out by categories. The images are lazyload for performance and a responsive image strategy per device is used with attribute [srcset](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#resolution_switching_different_sizes).  A description is showed on each item on hover and on focus. Regarding sorting, it is done based on the attribute ***data-sort***. For example: if we are sorting our items by Design, Code or Apps, we should add those name to div with class "sj-portfolio-item" in the attribute "data-sort". All the values we use must be included on the input type radio which represent all the sorting options. Finally this component is using [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), and it is prepared to have an important element highlighted using the class "sj-portfolio-item-prominent" (only one element). For those browsers with does not support CSS Grid, the grid is served by [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) 
+* ***Portfolio***:  a place to show projects done, that can be sorted out by categories. The images are lazyload for performance and a responsive image strategy per device is used with attribute [srcset](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#resolution_switching_different_sizes).  A description is showed on each item on hover and on focus. Regarding sorting, it is done based on the attribute ***data-sort***. For example: if we are sorting our items by Design, Code or Apps, we should add those items with class "sj-portfolio-item". All the values we use must be included on the input type radio which represent all the sorting options. Finally this component is using [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), and it is prepared to have an important element highlighted using the class "sj-portfolio-item-prominent" (only one element). For those browsers with does not support CSS Grid, the grid is served by [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox).
 * ***Pricing***: it is a component using a card design where a title, descriptions and call to action buttons are present.
 * ***Clients***: a little section to show clients logo in simple grid.
-* ***Contacts***: a contact form validated using Html5 validation api and other off line modes to get in touch
+* ***Contacts***: a contact form validated using Html5 validation api and other off line modes to get in touch.
 * ***Footer***: copyright information and links to social media. 
 
 ## General Considerations
@@ -56,10 +56,19 @@ This template tries to be helpful for any type of audience so there are some [vi
 
 Another accessible feature are the combinations of colors we used in this template. The colors can be found in src/sass/_variables.scss. We know that the selection of colors we use probably will not match your needs, so if you are going change the color palette please consider to have a contrast ratio of 4.5:1. Please it is recommended to use a [contrast color tool](https://webaim.org/resources/contrastchecker/).
 
-All the interactive elements (anchors, buttons, navigation) are suitable for being used for any mean: mouse, touch devices and keyboard navigation, and the styling applied for this last mean is already applied. 
+All the interactive elements (anchors, buttons, inputs, navigation) are suitable for being used for any mean: mouse, touch devices and keyboard navigation, and the styling applied for this last mean is already applied. 
 
 Finally all the features known for accessibility are covered by this template, just follow the original examples for any modification.
 
-### Section Using 
+### Section Using Aria Labelledby attribute
 
-All section are using "aria-labelledby" in order to depict which section is about 
+All section are using "aria-labelledby" in order to depict which section is about in. The attribute "aria-labelledby" is using the "id" attribute of title section in order to depict [the landmark sections for screen reader users](https://www.w3.org/TR/wai-aria-practices-1.1/examples/landmarks/index.html)
+
+Each section has a class in order to isolate the styles for each section.
+
+### Page Titled
+
+One advice is to use the titles keeping the order from tags h1 to h6 following [this advice](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements).
+
+Some sections, which they do not have a "visible" title, those sections are using a visually hidden title for the reason depicted in the previous section.
+
